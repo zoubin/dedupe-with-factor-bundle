@@ -111,3 +111,7 @@ Uncaught TypeError: Cannot read property '0' of undefined
 ```
 
 `c.js` is deduped into `common.js`, so `arguments[4][3]` in `b.js` will be `undefined`
+
+This problem was discussed in [substack/factor-bundle#38](https://github.com/substack/factor-bundle/pull/38), [substack/factor-bundle#39](https://github.com/substack/factor-bundle/pull/39) and [substack/factor-bundle#40](https://github.com/substack/factor-bundle/pull/40).
+
+However, since [8.0.0](https://github.com/substack/node-browserify/commit/324991581baf2797794207efc42ab18957635182), the dedupe style has been changed from `require` to `arguments[4]`, and the problem reexists again.
