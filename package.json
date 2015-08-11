@@ -1,0 +1,29 @@
+{
+  "name": "dedupe-problem-with-factor-bundle",
+  "version": "1.0.0",
+  "description": "Bug example for using factor-bundle when dedupe happens",
+  "main": "bundle.js",
+  "dependencies": {
+    "through2": "^1.1.1",
+    "factor-bundle": "2.5.0",
+    "browserify": "11.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoubin/dedupe-with-factor-bundle.git"
+  },
+  "keywords": [
+    "factor-bundle",
+    "browserify"
+  ],
+  "author": "zoubin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoubin/dedupe-with-factor-bundle/issues"
+  },
+  "homepage": "https://github.com/zoubin/dedupe-with-factor-bundle#readme"
+}
